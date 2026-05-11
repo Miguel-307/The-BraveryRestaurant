@@ -27,7 +27,7 @@
                         <a href="#" class="lang-link" data-lang="de">DE</a>
                     </div>
                 </div>
-                <a href="#location" class="btn btn-book" data-i18n="nav-book">Reservar</a>
+                <a href="<?php echo esc_url(home_url('/#location')); ?>" class="btn btn-book" data-i18n="nav-book">Reservar</a>
             </div>
             <button class="mobile-menu-btn" id="mobile-menu-btn">
                 <span></span>

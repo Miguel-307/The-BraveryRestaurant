@@ -16,6 +16,7 @@ get_header(); ?>
         <div class="menu-tabs reveal active">
             <div class="menu-tab active" data-target="food" data-i18n="tab-food">Comidas</div>
             <div class="menu-tab" data-target="drinks" data-i18n="tab-drinks">Bebidas</div>
+            <div class="menu-tab" data-target="cocktails" data-i18n="tab-cocktails">Cócteles</div>
         </div>
 
         <!-- Food Section -->
@@ -258,7 +259,7 @@ get_header(); ?>
                     <div class="menu-item-info">
                         <h4><span data-i18n="starter-padron">Pimientos de Padrón</span></h4>
                     </div>
-                    <div class="price-headers" style="display: none;"></div><!-- placeholder -->
+                    
                     <div class="menu-item-prices">
                         <span class="price-value">7,90€</span>
                         <span class="price-value">11,90€</span>
@@ -556,8 +557,35 @@ get_header(); ?>
 
         <!-- Postres -->
         <div class="menu-category reveal active">
+            <h3 data-i18n="menu-cat-desserts">Postres</h3>
+            <div class="menu-items-list">
+                <div class="menu-item-row">
+                    <div class="menu-item-info">
+                        <h4><span data-i18n="dessert-cheesecake">Tarta de queso Payoyo</span></h4>
+                    </div>
+                    <span class="menu-item-price">6,50€</span>
+                </div>
+                <div class="menu-item-row">
+                    <div class="menu-item-info">
+                        <h4><span data-i18n="dessert-brownie">Brownie con helado de vainilla</span></h4>
+                    </div>
+                    <span class="menu-item-price">7,00€</span>
+                </div>
+                <div class="menu-item-row">
+                    <div class="menu-item-info">
+                        <h4><span data-i18n="dessert-apple-pie">Tarta de manzana caliente</span></h4>
+                    </div>
+                    <span class="menu-item-price">6,50€</span>
+                </div>
+                <div class="menu-item-row">
+                    <div class="menu-item-info">
+                        <h4><span data-i18n="dessert-sorbet">Sorbete de limón al cava</span></h4>
+                    </div>
+                    <span class="menu-item-price">6,00€</span>
+                </div>
             </div>
         </div>
+                </div>
         <!-- End Food Section -->
 
         <!-- Drinks Section -->
@@ -616,6 +644,61 @@ get_header(); ?>
                     </div>
                 </div>
 
+                
+                
+                <div class="drinks-title-block" style="margin-top: 5rem;">
+                    <h3 data-i18n="menu-cat-cocktails">CÓCTELES</h3>
+                </div>
+
+                <div class="cocktails-grid reveal active" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; margin-bottom: 5rem;">
+                    <!-- Mojito -->
+                    <div class="cocktail-card" style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; border: 1px solid rgba(212, 175, 55, 0.1);">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/mojito_clasico.png" alt="Mojito Clásico" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; font-size: 1.4rem;">Mojito Clásico</h4>
+                            <span style="color: var(--gold); font-weight: 700; font-size: 1.2rem;">13,00€</span>
+                        </div>
+                    </div>
+                    <!-- Espresso Martini -->
+                    <div class="cocktail-card" style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; border: 1px solid rgba(212, 175, 55, 0.1);">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/espresso_martini.png" alt="Espresso Martini" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; font-size: 1.4rem;">Espresso Martini</h4>
+                            <span style="color: var(--gold); font-weight: 700; font-size: 1.2rem;">13,00€</span>
+                        </div>
+                    </div>
+                    <!-- Passion Martini -->
+                    <div class="cocktail-card" style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; border: 1px solid rgba(212, 175, 55, 0.1);">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/passion_martini.png" alt="Passion Martini" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; font-size: 1.4rem;">Passion Martini</h4>
+                            <span style="color: var(--gold); font-weight: 700; font-size: 1.2rem;">13,00€</span>
+                        </div>
+                    </div>
+                    <!-- Piña Colada -->
+                    <div class="cocktail-card" style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; border: 1px solid rgba(212, 175, 55, 0.1);">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/pina_colada.png" alt="Piña Colada" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; font-size: 1.4rem;">Piña Colada</h4>
+                            <span style="color: var(--gold); font-weight: 700; font-size: 1.2rem;">13,00€</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drinks-title-block" style="margin-top: 3rem;">
+                    <h3 data-i18n="menu-cat-soft-cocktails">CÓCTELES SIN ALCOHOL</h3>
+                </div>
+
+                <div class="cocktails-grid reveal active" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 2.5rem; margin-bottom: 5rem; justify-content: center;">
+                    <!-- Strawberry Fields -->
+                    <div class="cocktail-card" style="background: var(--white); border-radius: 20px; overflow: hidden; box-shadow: 0 10px 25px rgba(0,0,0,0.05); text-align: center; border: 1px solid rgba(212, 175, 55, 0.1); max-width: 400px; margin: 0 auto;">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/strawberry_fields.png" alt="Strawberry Fields" style="width: 100%; height: 250px; object-fit: cover;">
+                        <div style="padding: 1.5rem;">
+                            <h4 style="margin-bottom: 0.5rem; font-family: 'Playfair Display', serif; font-size: 1.4rem;">Strawberry Fields</h4>
+                            <span style="color: var(--gold); font-weight: 700; font-size: 1.2rem;">10,00€</span>
+                        </div>
+                    </div>
+                </div>
                 <div class="drinks-title-block" style="margin-top: 5rem;">
                     <h3 data-i18n="menu-cat-glass-wine">VINOS POR COPA</h3>
                 </div>
@@ -880,6 +963,71 @@ get_header(); ?>
 
         </div>
         <!-- End Drinks Section -->
+        <!-- Cocktails Section -->
+        <div id="cocktails" class="menu-section">
+            <div class="section-header reveal" style="text-align: center; margin-bottom: 4rem;">
+                <span class="subtitle">Premium Selection</span>
+                <h2 data-i18n="menu-cat-cocktails">CÓCTELES</h2>
+            </div>
+            
+            <div class="cocktails-grid">
+                <!-- Mojito -->
+                <div class="cocktail-card reveal">
+                    <div class="cocktail-img">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/mojito_classic.png" alt="Mojito">
+                    </div>
+                    <div class="cocktail-info">
+                        <h4 data-i18n="cocktail-mojito">Mojito Clásico</h4>
+                        <span class="price">13,00€</span>
+                    </div>
+                </div>
+                
+                <!-- Espresso Martini -->
+                <div class="cocktail-card reveal">
+                    <div class="cocktail-img">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/espresso_martini.png" alt="Espresso Martini">
+                    </div>
+                    <div class="cocktail-info">
+                        <h4 data-i18n="cocktail-espresso-martini">Espresso Martini</h4>
+                        <span class="price">13,00€</span>
+                    </div>
+                </div>
+
+                <!-- Passion Martini -->
+                <div class="cocktail-card reveal">
+                    <div class="cocktail-img">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/passion_martini.png" alt="Passion Martini">
+                    </div>
+                    <div class="cocktail-info">
+                        <h4 data-i18n="cocktail-passion-martini">Passion Martini</h4>
+                        <span class="price">13,00€</span>
+                    </div>
+                </div>
+
+                <!-- Piña Colada -->
+                <div class="cocktail-card reveal">
+                    <div class="cocktail-img">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/pina_colada.png" alt="Piña Colada">
+                    </div>
+                    <div class="cocktail-info">
+                        <h4 data-i18n="cocktail-pina-colada">Piña Colada</h4>
+                        <span class="price">13,00€</span>
+                    </div>
+                </div>
+
+                <!-- Strawberry Fields (Sin Alcohol) -->
+                <div class="cocktail-card reveal">
+                    <div class="cocktail-img">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/strawberry_fields.png" alt="Strawberry Fields">
+                    </div>
+                    <div class="cocktail-info">
+                        <h4 data-i18n="cocktail-strawberry-fields">Strawberry Fields (Sin alcohol)</h4>
+                        <span class="price">10,00€</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 </section>
 

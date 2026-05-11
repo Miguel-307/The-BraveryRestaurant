@@ -6,7 +6,7 @@
         <div class="carousel-inner">
             <!-- Slide 1: Main Terrace -->
             <div class="carousel-item active"
-                style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<?php echo get_stylesheet_directory_uri(); ?>/assets/WhatsApp Image 2026-05-07 at 21.15.11.jpeg');">
+                style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<?php echo get_stylesheet_directory_uri(); ?>/assets/WhatsApp%20Image%202026-05-07%20at%2021.15.11.jpeg');">
                 <div class="hero-content">
                     <h1 class="reveal" data-i18n="hero-title-1">La Excelencia en cada Detalle</h1>
                     <p class="reveal" data-i18n="hero-desc-1">Una experiencia sensorial que redefine la alta cocina
@@ -16,7 +16,7 @@
             </div>
             <!-- Slide 2: Cozy Corner -->
             <div class="carousel-item"
-                style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<?php echo get_stylesheet_directory_uri(); ?>/assets/WhatsApp Image 2026-05-07 at 21.15.09.jpeg');">
+                style="background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('<?php echo get_stylesheet_directory_uri(); ?>/assets/WhatsApp%20Image%202026-05-07%20at%2021.15.09.jpeg');">
                 <div class="hero-content">
                     <h1 data-i18n="hero-title-2">Sabor que Inspira</h1>
                     <p data-i18n="hero-desc-2">Ingredientes locales seleccionados para crear obras maestras culinarias
@@ -68,6 +68,24 @@
                 <h2 data-i18n="service-title">Nuestro Servicio</h2>
                 <p data-i18n="service-p1">Nos enorgullecemos de ofrecer una atención al cliente excepcional. Nuestro equipo está dedicado a hacer que cada visita sea especial, brindando un servicio atento, profesional y cercano.</p>
                 <p data-i18n="service-p2">Desde el momento en que cruza nuestra puerta, nuestro objetivo es que se sienta como en casa, disfrutando de un ambiente acogedor y una atención personalizada que cuida hasta el más mínimo detalle.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Patio Section -->
+<section class="patio-section" id="patio">
+    <div class="container">
+        <div class="about-grid reverse">
+            <div class="about-text reveal">
+                <span class="subtitle" data-i18n="front-patio-subtitle">Ambiente Único</span>
+                <h2 data-i18n="front-patio-title">Patio Privado</h2>
+                <p data-i18n="front-patio-desc">Disfruta de una comida tranquila en nuestro patio exclusivo, un oasis de paz en el centro de Marbella. Perfecto para reuniones íntimas y cenas inolvidables bajo el cielo mediterráneo.</p>
+                <a href="<?php echo esc_url(home_url('/reserva')); ?>" class="btn btn-outline" data-i18n="nav-book">Reservar Mesa</a>
+            </div>
+            <div class="about-image reveal">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/patio.png"
+                    alt="Nuestro Patio Privado" class="rounded-image">
             </div>
         </div>
     </div>
@@ -157,40 +175,56 @@
             <!-- Specialty 1 -->
             <div class="menu-card reveal">
                 <div class="card-img">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/WhatsApp Image 2026-05-07 at 21.15.00.jpeg"
-                        alt="Salmorejo">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/gazpacho.png"
+                        alt="Gazpacho">
                 </div>
                 <div class="card-content">
-                    <h3 data-i18n="spec-1-name">Salmorejo Cordobés</h3>
-                    <p data-i18n="spec-1-desc">Crema fría de tomates seleccionados, huevo y virutas de jamón ibérico.
-                    </p>
-                    <span class="price">8,50€</span>
+                    <h3 data-i18n="salad-gazpacho">Gazpacho Andaluz</h3>
+                    <p data-i18n="spec-1-desc-new">Tradición andaluza servida con frescura y los mejores ingredientes locales.</p>
+                    <span class="price">7,50€</span>
                 </div>
             </div>
             <!-- Specialty 2 -->
             <div class="menu-card reveal">
                 <div class="card-img">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/WhatsApp Image 2026-05-07 at 21.15.04 (1).jpeg"
-                        alt="Albóndigas">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/burratina.png"
+                        alt="Burratina">
                 </div>
                 <div class="card-content">
-                    <h3 data-i18n="spec-2-name">Albóndigas en Salsa</h3>
-                    <p data-i18n="spec-2-desc">Receta tradicional con carne seleccionada y patatas fritas caseras.</p>
-                    <span class="price">7,90€</span>
+                    <h3 data-i18n="salad-burratina">Ensalada de Burratina</h3>
+                    <p data-i18n="spec-2-desc-new">Burrata cremosa acompañada de tomates de la huerta y pesto de albahaca.</p>
+                    <span class="price">17,90€</span>
                 </div>
             </div>
             <!-- Specialty 3 -->
             <div class="menu-card reveal">
                 <div class="card-img">
-                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/WhatsApp Image 2026-05-07 at 21.15.06 (1).jpeg"
-                        alt="Postre">
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/minihamburguesa.png"
+                        alt="Minihamburguesa">
                 </div>
                 <div class="card-content">
-                    <h3 data-i18n="spec-3-name">Crepe con Helado</h3>
-                    <p data-i18n="spec-3-desc">Fina masa de crepe rellena, acompañada de helado de vainilla y chocolate.
-                    </p>
-                    <span class="price">7,90€</span>
+                    <h3 data-i18n="dish-mini-hamburguesa">Minihamburguesa Especial</h3>
+                    <p data-i18n="spec-3-desc-new">Carne premium con cebolla caramelizada y nuestro toque secreto.</p>
+                    <span class="price">5,00€</span>
                 </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Tostas Section -->
+<section class="tostas-section" id="tostas">
+    <div class="container">
+        <div class="about-grid">
+            <div class="about-image reveal">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/assets/tostas.png"
+                    alt="Nuestras Tostas" class="rounded-image">
+            </div>
+            <div class="about-text reveal">
+                <span class="subtitle" data-i18n="front-tostas-subtitle">Crujientes y Deliciosas</span>
+                <h2 data-i18n="front-tostas-title">Nuestras Tostas</h2>
+                <p data-i18n="front-tostas-desc">Una selección artesanal de tostas preparadas con pan de masa madre e ingredientes frescos de temporada. Desde los clásicos ibéricos hasta combinaciones innovadoras.</p>
+                <a href="<?php echo esc_url(home_url('/carta')); ?>" class="btn btn-outline" data-i18n="nav-menu">Ver Carta Completa</a>
             </div>
         </div>
     </div>
@@ -205,18 +239,20 @@
                 <h2 data-i18n="loc-title">Ubicación & Contacto</h2>
                 <div class="contact-item">
                     <i class="fas fa-map-marker-alt"></i>
-                    <div>
+                    <div class="contact-text">
                         <p>Calle Pantaleón, 2</p>
                         <p>29601 Marbella, Málaga</p>
                     </div>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-phone-alt"></i>
-                    <p>+34 613 98 19 42</p>
+                    <div class="contact-text">
+                        <p>+34 613 98 19 42</p>
+                    </div>
                 </div>
                 <div class="contact-item">
                     <i class="fas fa-clock"></i>
-                    <div>
+                    <div class="contact-text">
                         <p data-i18n="loc-hours">Abierto todos los días: 12:00 - 00:00</p>
                     </div>
                 </div>
